@@ -55,6 +55,28 @@ main {
     gap: 40px;
 }
 
+.botao-voltar {
+    margin: 20px;
+    text-align: left;
+}
+
+.botao-voltar a {
+    background-color: #192b54;
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block; /* Faz o link parecer um botão */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-voltar a:hover {
+    background-color: #0d1e3d;
+}
+
+
 /* Seção de Informações do Local */
 .local-info {
     text-align: center;
@@ -152,11 +174,9 @@ main {
     font-size: 16px;
 }
 
-.pagamento button {
-    background-color:#192b54 
-}
+/* Estilos para o botão confirmar */
 .btn.confirmar {
-    display: inline-block; /* Faz com que o link se comporte como um botão */
+    display: inline-block;
     background-color: #192b54; /* Cor de fundo */
     color: white; /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno */
@@ -173,6 +193,26 @@ main {
 .btn.confirmar:hover {
     background-color: #15488a; /* Cor do botão ao passar o mouse */
 }
+
+/* Estilos para o botão voltar */
+.botao-voltar {
+    margin: 20px;
+    text-align: left;
+}
+
+.botao-voltar a {
+    background-color: #192b54;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.botao-voltar a:hover {
+    background-color: #0d1e3d;
+}
+
 
 footer {
     background-color: #222;

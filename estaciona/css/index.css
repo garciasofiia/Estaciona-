@@ -55,7 +55,7 @@ header nav a:hover {
     align-items: center; /* Centraliza verticalmente */
     flex: 1; /* Garante que o conteúdo ocupe todo o espaço restante */
     padding: 20px;
-    background-image: url('carros.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url(etta.png)  ; /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* A imagem cobre toda a área */
     background-position: center; /* A imagem é centralizada */
     background-attachment: fixed; /* Imagem fixa ao rolar */
@@ -66,7 +66,6 @@ header nav a:hover {
 /* Seção de texto dentro do conteúdo */
 .text-section {
     max-width: 60%;
-    background-color: rgba(122, 183, 248, 0.7); /* Fundo azul claro transparente */
     border-radius: 15px; /* Bordas arredondadas */
     padding: 40px; /* Espaçamento interno */
     color: #fff; /* Cor do texto branca */
@@ -75,7 +74,7 @@ header nav a:hover {
     line-height: 1.6;
     position: relative; /* Necessário para elementos internos posicionados */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
-    background-image: url('carros.png'); /* Substitua pelo caminho da sua imagem */
+    background-color: rgba(25, 43, 84, 0.5); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* A imagem cobre toda a área */
     background-position: center; /* Centraliza a imagem */
     background-blend-mode: overlay; /* Mistura a imagem com o fundo transparente */
