@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estaciona+</title>
+    <link rel="stylesheet" href="css\cadastro.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+            <a href="reserva.html">Fazer Reserva</a>
+            <a href="mensal.html">Estar+ Mensal</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
+    </header>
+
+    <body>
+
+        <!-- Formulário de Cadastro -->
+        <div class="form-container">
+            <h2>Cadastro Estaciona+</h2>
+            <form action="processar_cadastro.php" method="POST">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="placa">Placa do Carro</label>
+                    <input type="text" id="placa" name="placa" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+    
+                <div class="form-buttons">
+                    <a href="cofirmacao.html" class="btn login">Cadastrar</a>
+                    <a href="login.html" class="btn login">Já existe cadastro</a>
+                </div>
+
+                
+            </form>
+        </div>
+    
+    </body>
+
+    <footer>
+        <p>&copy; 2024 Estar+. Todos os direitos reservados.</p>
+    </footer>
+    </html>
+

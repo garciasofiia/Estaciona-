@@ -1,0 +1,154 @@
+/* Corpo da página */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column; /* Permite que o conteúdo seja empilhado abaixo do cabeçalho */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 0;
+
+}
+
+/* Cabeçalho fixo no topo */
+
+header {
+    background-color: #192b54;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Adiciona espaçamento ao conteúdo para evitar sobreposição com o cabeçalho */
+.main-content {
+    margin-top: 55px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex: 1; /* Garante que o conteúdo ocupe todo o espaço restante */
+    padding: 20px;
+    background-image: url('carros.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* A imagem é centralizada */
+    background-attachment: fixed; /* Imagem fixa ao rolar */
+    text-align: center; /* Garante que o texto dentro de .main-content fique centralizado */
+    
+}
+
+/* Seção de texto dentro do conteúdo */
+.text-section {
+    max-width: 60%;
+    background-color: rgba(122, 183, 248, 0.7); /* Fundo azul claro transparente */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 40px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto branca */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px;
+    line-height: 1.6;
+    position: relative; /* Necessário para elementos internos posicionados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    background-image: url('carros.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-blend-mode: overlay; /* Mistura a imagem com o fundo transparente */
+}
+
+
+.text-section h2 {
+    font-size: 40px; /* Tamanho maior para o título */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000, -2px -2px 5px #000, 2px -2px 5px #000, -2px 2px 5px #000; /* Borda preta em volta do título */
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px #000, -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000; /* Borda preta no parágrafo */
+}
+
+/* Seção de Ícones */
+/* Seção de Ícones */
+.icons-section {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 50px; /* Espaçamento entre os ícones */
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.icon {
+    text-align: center;
+    font-size: 14px; /* Tamanho menor para o texto dos ícones */
+    display: flex;
+    flex-direction: column; /* Faz com que a imagem e o texto fiquem empilhados */
+    align-items: center; /* Centraliza o conteúdo dentro de cada ícone */
+}
+
+.icon img {
+    width: 80px; /* Tamanho menor para os ícones */
+    margin-bottom: 15px;
+}
+
+.icon h3 {
+    color: #021c44;
+    margin: 10px 0;
+    font-size: 18px; /* Tamanho menor para o título dos ícones */
+}
+
+.icon a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #021c44;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover dos botões */
+.icon a:hover {
+    opacity: 0.8;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    left: 0;
+}

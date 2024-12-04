@@ -1,0 +1,154 @@
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho fixo no topo */
+
+
+header {
+    background-color: #192b54;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Estilo para a seção de texto do formulário */
+/* Centralizando a caixa do formulário */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo transparente */
+    padding: 40px; /* Padding ajustado */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar o formulário */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 100px auto; /* Ajusta o afastamento do topo e centraliza */
+}
+
+
+
+
+
+/* Título */
+h2 {
+    color: #192b54;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Estilo dos campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Esconde a senha por padrão */
+#senha {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Quando a caixa de seleção é marcada, altera o tipo do campo de senha para texto */
+#show-password:checked ~ .input-group input {
+    -webkit-text-security: none; /* Para alguns navegadores (ex: Safari) */
+    font-family: 'Arial', sans-serif; /* Mostra o texto */
+}
+
+/* Estilo do botão */
+#show-password {
+    margin-top: 10px;
+}
+
+/* Estilo dos botões */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-buttons .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.form-buttons .btn.cadastrar {
+    background-color: #85c6e4; /* Verde */
+}
+
+.form-buttons .btn.login {
+    background-color: #192b54; /* Azul */
+}
+
+/* Hover dos botões */
+.form-buttons .btn:hover {
+    opacity: 0.8;
+}
+
+/* Foco nos campos de input */
+.input-group input:focus {
+    outline: none;
+    border-color: #85c6e4;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    left: 0;
+}

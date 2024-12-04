@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #192b54;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    margin-top: 100px; /* Para não sobrepor o cabeçalho */
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Confirmação */
+.confirmacao {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.confirmacao h1 {
+    font-size: 24px;
+    color: #192b54;
+    margin-bottom: 20px;
+}
+
+.confirmacao p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.confirmacao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.confirmacao ul li {
+    margin-bottom: 10px;
+}
+
+.confirmacao a {
+    color: #192b54;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.confirmacao a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

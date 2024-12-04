@@ -1,0 +1,151 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #192b54;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo da página de assinatura */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #192b54;
+}
+
+.assinatura-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icon-calendar img {
+    width: 150px;
+    margin-right: 40px;
+}
+
+.pricing {
+    max-width: 800px;
+    text-align: left;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px; /* Adicionando espaçamento entre as caixas */
+}
+
+.plano {
+    background-color: #e8f4fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo dentro das caixas */
+}
+
+button {
+    background-color: #192b54;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #15488a;
+}
+
+/* Calendário */
+.calendario {
+    margin: 40px 0;
+}
+
+input[type="month"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Informações adicionais - Benefícios */
+.informacoes-adicionais {
+    margin-top: 40px;
+    text-align: center; /* Centraliza o texto dos benefícios */
+}
+
+.informacoes-adicionais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.informacoes-adicionais li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Estilo para os benefícios */
+.beneficios {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.beneficios ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    left: 0;
+}

@@ -1,0 +1,145 @@
+/* Resetando margens e preenchimentos */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    background-color: #192b54;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Adiciona espaçamento ao conteúdo para evitar sobreposição com o cabeçalho */
+.main-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #192b54;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Estilo dos campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo dos botões */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-buttons .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.form-buttons .btn.login {
+    background-color: #85c6e4; /* Verde */
+}
+
+.form-buttons .btn.cadastrar {
+    background-color: #192b54; /* Azul */
+}
+
+/* Hover dos botões */
+.form-buttons .btn:hover {
+    opacity: 0.8;
+}
+
+/* Foco nos campos de input */
+.input-group input:focus {
+    outline: none;
+    border-color: #85c6e4;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
